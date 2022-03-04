@@ -1,0 +1,46 @@
+.container {
+  /* background: lightblue;
+  border: 4px solid blue; */
+  padding: 16px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.header {
+  /* background-color: red;
+  border: 4px solid black; */
+  flex: 1 1 auto;
+}
+
+.items {
+  flex-flow: row wrap;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.item {
+  background-color: rgb(40, 40, 40);
+  border: 4px solid black;
+  padding: 4px;
+  flex: auto;
+}
+
+body {
+  background-color: rgb(25, 25, 25);
+  color: rgb(240, 240, 240);
+}
+
+img {
+  width: 600px;
+  height: auto;
+}
+
+a {
+  color: lightblue;
+}
+
+h1 {
+  color: white;
+}
