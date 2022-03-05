@@ -1,29 +1,28 @@
 .container {
-  /* background: lightblue;
-  border: 4px solid blue; */
+  /* background: lightblue; */
+  /*border: 4px solid blue; */
   padding: 16px;
   gap: 8px;
   display: flex;
   flex-direction: column;
-  
 }
 
 .header {
-  /* background-color: red;
-  border: 4px solid black; */
+  /* background-color: red; */
+  /*border: 4px solid black; */
   flex: 1 1 auto;
 }
 
 .items {
   flex-flow: row wrap;
   display: flex;
-  flex-direction: row;
-  flex: 1;
+  gap: 20px;
 }
+
 .item {
   background-color: rgb(40, 40, 40);
-  border: 4px solid black;
-  padding: 4px;
+  border: 4px solid rgb(240, 240, 240);
+  padding: 10px;
   flex: auto;
 }
 
@@ -32,9 +31,8 @@ body {
   color: rgb(240, 240, 240);
 }
 
-img {
+#demos {
   width: 600px;
-  height: auto;
 }
 
 a {

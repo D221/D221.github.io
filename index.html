@@ -3,15 +3,37 @@
   <head>
     <title>D221 Projects</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
   </head>
 
   <body>
     <div class="container">
       <div class="header">
-        <header>
-          <h1>D221 Projects:</h1>
-        </header>
+        <h1>D221 Projects:</h1>
+        <p>My Links:</p>
+        <dt>
+          <a href="https://github.com/D221">
+            <img
+              src="https://github.githubassets.com/favicons/favicon-dark.png"
+              alt="github logo"
+              width="16px"
+            />
+            Github
+          </a>
+        </dt>
+        <dt>
+          <a href="https://t.me/D22157">
+            <img
+              src="https://telegram.org/favicon.ico"
+              alt="telegram logo"
+              width="16px"
+              />
+              Telegram
+          </a>
+        </dt>
+        <dt>
+          <a href="mailto:D221@airmail.cc"> 📧Email: D221@airmail.cc </a>
+        </dt>
       </div>
       <div class="items">
         <div class="item">
@@ -28,6 +50,7 @@
             <img
               src="images/windows.png"
               alt="convert_to_opus image"
+              id="demos"
             />
           </p>
         </div>
@@ -42,10 +65,24 @@
             files to opus audio format.
           </p>
           <p>
-            <img
-            src="images/demo.gif"
-            alt="convert-to-opus demo"
+            <img src="images/demo.gif" alt="convert-to-opus demo" id="demos"
           </p>
+        </div>
+        <div class="item">
+          <h2>Misc Scripts that I use.</h2>
+          <h4>mp3 to libopus for audiobooks</h4>
+          <pre>
+for f in *.mp3; do ffmpeg -i "${f}" -c:a libopus -b:a 32k "${f%%.*}.ogg"; done
+          </pre>
+          <h4>ffmpeg change container of file</h4>
+          <pre>
+ffmpeg -i input.webm -acodec copy output.ogg              # webm -> ogg (containing opus from yt-dlp)
+ffmpeg -i input.mp4 -acodec copy -vcodec copy output.webm # any container to webm/mkv
+          </pre>
+          <h4>yt-dlp playlist with order in filename</h4>
+          <pre>
+yt-dlp -f "bestvideo[height<=1080]+bestaudio" -o "%(playlist_index)s-%(title)s.%(ext)s" <playlist_link>
+          </pre>
         </div>
       </div>
     </div>
