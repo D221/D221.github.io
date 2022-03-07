@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>D221 Projects</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -27,8 +27,8 @@
               src="https://telegram.org/favicon.ico"
               alt="telegram logo"
               width="16px"
-              />
-              Telegram
+            />
+            Telegram
           </a>
         </dt>
         <dt>
@@ -70,31 +70,32 @@
         </div>
         <div class="item">
           <h2>
-            <a href="https://github.com/D221/Okeanic"
-            >Okeanic</a>
+            <a href="https://github.com/D221/Okeanic">Okeanic</a>
           </h2>
-          <p>
-            Okeanic - A clean minimal foobar theme 
-          </p>
+          <p>Okeanic - A clean minimal foobar theme</p>
           <p>
             <img src="images/okeanic.png" alt="Okeanic screenshot" id="demos"
           </p>
         </div>
         <div class="item">
           <h2>Misc Scripts that I use.</h2>
-          <h4>mp3 to libopus for audiobooks</h4>
-          <pre>
-for f in *.mp3; do ffmpeg -i "${f}" -c:a libopus -b:a 32k "${f%%.*}.ogg"; done
-          </pre>
-          <h4>ffmpeg change container of file</h4>
-          <pre>
-ffmpeg -i input.webm -acodec copy output.ogg              # webm -> ogg (containing opus from yt-dlp)
-ffmpeg -i input.mp4 -acodec copy -vcodec copy output.webm # any container to webm/mkv
-          </pre>
-          <h4>yt-dlp playlist with order in filename</h4>
-          <pre>
-yt-dlp -f "bestvideo[height<=1080]+bestaudio" -o "%(playlist_index)s-%(title)s.%(ext)s" <playlist_link>
-          </pre>
+          <h3>mp3 to libopus for audiobooks</h3>
+          <p>
+            for f in *.mp3; do ffmpeg -i "${f}" -c:a libopus -b:a 32k
+            "${f%%.*}.ogg"; done
+          </p>
+          <h3>ffmpeg change container of file</h3>
+          <p>
+            # webm -> ogg (containing opus from yt-dlp)<br />
+            ffmpeg -i input.webm -acodec copy output.ogg<br />
+            # any container to webm/mkv<br />
+            ffmpeg -i input.mp4 -acodec copy -vcodec copy output.webm
+          </p>
+          <h3>yt-dlp playlist with order in filename</h3>
+          <p>
+            yt-dlp -f "bestvideo[height<=1080]+bestaudio" -o
+            "%(playlist_index)s-%(title)s.%(ext)s" playlist_link
+          </p>
         </div>
       </div>
     </div>
