@@ -99,12 +99,14 @@
             for f in *.mp3; do ffmpeg -i "${f}" -c:a libopus -b:a 32k
             "${f%%.*}.ogg"; done
           </p>
-          <h3>ffmpeg change container of file</h3>
+          <h3>ffmpeg stuff</h3>
           <p>
             # webm -> ogg (containing opus from yt-dlp)<br />
             ffmpeg -i input.webm -acodec copy output.ogg<br />
             # any container to webm/mkv<br />
-            ffmpeg -i input.mp4 -acodec copy -vcodec copy output.webm
+            ffmpeg -i input.mp4 -acodec copy -vcodec copy output.webm<br />
+            # trim any video without encoding<br />
+            ffmpeg -ss 00:00:00 -i input.mp4 -to 00:00:00 -c copy output.mp4
           </p>
           <h3>yt-dlp playlist with order in filename</h3>
           <p>

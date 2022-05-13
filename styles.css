@@ -28,7 +28,7 @@
   flex: auto;
 }
 
-#demos {
+picture.demos img {
   width: 600px; /* Max image size but allow shrinking */
   height: auto;
   max-width: 100%;
