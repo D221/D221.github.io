@@ -96,8 +96,15 @@
           <h2>Misc Scripts that I use.</h2>
           <h3>mp3 to libopus for audiobooks</h3>
           <p>
+            for %i in (*.mp3) do ffmpeg -i "%i" -c:a libopus -b:a 32k
+            "%~ni.ogg"<br />
             for f in *.mp3; do ffmpeg -i "${f}" -c:a libopus -b:a 32k
             "${f%%.*}.ogg"; done
+          </p>
+          <h3>JPEG to JPEG XL</h3>
+          <p>
+            for %i in (*.jpg) do cjxl "%i" "%~ni.jxl"<br />
+            for f in *.jpg; do cjxl "${f}" "${f%%.*}.jxl"; done
           </p>
           <h3>ffmpeg stuff</h3>
           <p>
