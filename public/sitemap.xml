@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://examplesite.com/</loc>
+    <lastmod>2022-05-29T18:42:26+03:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/posts/scripts/</loc>
+    <lastmod>2022-05-29T18:42:26+03:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/posts/</loc>
+    <lastmod>2022-05-29T18:42:26+03:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/posts/okeanic/</loc>
+    <lastmod>2022-05-29T18:31:21+03:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/posts/convert-to-opus-cli/</loc>
+    <lastmod>2022-05-29T18:06:31+03:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/posts/convert-to-opus/</loc>
+    <lastmod>2022-05-28T01:10:32+03:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/categories/</loc>
+  </url><url>
+    <loc>https://examplesite.com/tags/</loc>
+  </url>
+</urlset>
