@@ -3,7 +3,7 @@ title: "convert-to-opus"
 date: 2022-05-28T01:10:32+03:00
 draft: false
 cover:
-    image: "/img/windows.png"
+    image: "/img/convert-to-opus-windows.png"
 ---
 
 ## Also check out CLI of this [convert-to-opus-cli]({{< ref "/posts/convert-to-opus-cli" >}})
