@@ -5,6 +5,9 @@ draft: false
 cover:
     image: "/img/convert-to-opus-cli-static.png"
 ---
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/D221/convert-to-opus-cli?label=Download)](https://github.com/D221/convert-to-opus-cli/releases/latest)
+![GitHub](https://img.shields.io/github/license/D221/convert-to-opus-cli)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/D221/convert-to-opus-cli/Pylint)
 
 convert-to-opus-cli is a Python CLI program for converting audio files to [opus](https://opus-codec.org/) audio format.
 
@@ -31,17 +34,15 @@ Must have installed ffmpeg and added to PATH
 
 ```bash
 git clone https://github.com/D221/convert-to-opus-cli
-cd convert-to-opus-cli
-pip install -r requirements.txt
 ```
 
 ## Usage
 
 ```bash
 python3 convert-to-opus-cli -h # for info
-# Use -d for directory, -s for single file
-python3 convert-to-opus-cli -d /path/to/files
-python3 convert-to-opus-cli -s /path/to/file
+# The pogram detects directory or file
+python3 convert-to-opus-cli /path/to/directory
+python3 convert-to-opus-cli /path/to/file
 ```
 
 You can customize settings in config.json
