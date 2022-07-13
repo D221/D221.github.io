@@ -3,7 +3,7 @@ title: " convopus"
 date: 2022-05-29T18:06:31+03:00
 draft: false
 cover:
-    image: "/img/convert-to-opus-cli-static.png"
+    image: "/img/convopus-static.png"
 ---
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/D221/convopus?label=Download)](https://github.com/D221/convopus/releases/latest)
 ![GitHub](https://img.shields.io/github/license/D221/convopus)
@@ -11,11 +11,10 @@ cover:
 
 convopus is a Python CLI program for converting audio files to [opus](https://opus-codec.org/) audio format.
 
-slightly outdated demo:
 {{< rawhtml >}}
     <video
-              src="/img/convert-to-opus-cli.webm"
-              alt="convert-to-opus demo"
+              src="/img/convopus.webm"
+              alt="convopus demo"
               autoplay
               loop
               muted
