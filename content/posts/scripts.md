@@ -6,16 +6,8 @@ draft: false
 
 ### Convert a folder of mp3 files to opus for audiobooks
 
-windows:
-
-```cmd
-for %i in (*.mp3) do ffmpeg -i "%i" -c:a libopus -b:a 32k "%~ni.ogg"
-```
-
-linux:
-
 ```bash
-for f in *.mp3; do ffmpeg -i "${f}" -c:a libopus -b:a 32k "${f%%.*}.ogg"; done
+convopus "input_folder" -b 32k
 ```
 
 ### JPEG to JPEG XL
@@ -32,6 +24,23 @@ linux:
 for f in *.jpg; do cjxl "${f}" "${f%%.*}.jxl"; done
 ```
 
+### H.264 to AV1
+windows:
+
+```cmd
+for %i in (*.mp4) do ffmpeg -i "%i" -vcodec libsvtav1 -acodec libopus "%~ni.mkv"
+```
+
+linux:
+
+```bash
+for f in *.mp4; do ffmpeg -i "${f}" -vcodec libsvtav1 -acodec libopus "${f%%.*}.mkv"; done
+```
+
+### SOCKS5 Python Proxy Checker
+https://gist.github.com/D221/b77f09eea1098951b2420de3bc292005
+
+
 ### Download youtube playlist using yt-dlp with index in filename
 
 ```bash
@@ -47,6 +56,3 @@ ffmpeg -i input.webm -acodec copy output.ogg
 ffmpeg -i input.mp4 -acodec copy -vcodec copy output.webm
 # trim any video without encoding
 ffmpeg -ss 00:00:00 -i input.mp4 -to 00:00:00 -c copy output.mp4
-# av1
-ffmpeg -i input.mp4 -vcodec libsvtav1 -acodec copy output.mkv
-```

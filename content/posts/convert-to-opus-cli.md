@@ -7,7 +7,8 @@ cover:
 ---
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/D221/convopus?label=Download)](https://github.com/D221/convopus/releases/latest)
 ![GitHub](https://img.shields.io/github/license/D221/convopus)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/D221/convopus/Pylint)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/D221/convopus/pylint.yml?branch=main)
+
 
 convopus is a Python CLI program for converting audio files to [opus](https://opus-codec.org/) audio format.
 
@@ -25,15 +26,17 @@ convopus is a Python CLI program for converting audio files to [opus](https://op
 ## Features
 
 - Windows / Linux / macOS / Android (via Termux) support
-- Customizable bitrate and more (via config.json)
-- Support of various audio formats / containers
+- Customizable bitrate, vbr and more (via config.json)
+- Support of various input audio formats / containers
+- Fast multi threading converting
+- Recursive conversion
 
 ## Installation
 
 Must have installed ffmpeg and added to PATH
 
 ```bash
-pip install -U convopus
+pip install convopus
 ```
 
 ## Build
@@ -52,8 +55,6 @@ convopus -h # for info
 convopus /path/to/directory
 convopus /path/to/file
 ```
-
-Also you can find windows binary in [Releases](https://github.com/D221/convopus/releases/latest)
 
 You can customize settings in **config.json** located in:
 
